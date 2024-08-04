@@ -30,7 +30,7 @@ export default function Navbar() {
     }, []);
 
     return (
-        <div className={`fixed top-0 w-full z-50 ${scrolled ? 'bg-white' : 'bg-[#004733]'} transition-colors duration-300`}>
+        <div className={`fixed top-0 w-screen z-50 ${scrolled ? 'bg-white' : 'bg-[#004733]'} transition-colors duration-300`}>
             <nav className="flex justify-between p-2">
                 <div className="flex space-x-3 p-2">
                     <p className={`text-3xl ${scrolled ? 'text-black' : 'text-white'}`}>Better</p>
@@ -179,7 +179,7 @@ export default function Navbar() {
                     <div className={`flex items-center justify-center w-12 h-12 rounded-full border ${scrolled ? 'border-black' : 'border-white'}`}>
                         <FaPhone className={`text-2xl ${scrolled ? 'text-black' : 'text-white'}`} />
                     </div>
-                    <p className={`hidden lg:flex lg:py-2 ${scrolled ? 'text-black' : 'text-white'}`}>Sign in</p>
+                    <p className={`hidden lg:flex lg:py-2 lg:pr-10 ${scrolled ? 'text-black' : 'text-white'}`}>Sign in</p>
                     <button onClick={toggleMenu} className={`p-2 lg:hidden text-3xl ${scrolled ? 'text-black' : 'text-white'}`}>
                         {menuOpen ? <IoMdClose /> : <LuAlignJustify />}
                     </button>
