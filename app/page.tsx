@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import { FaPhone } from "react-icons/fa";
 import { LuAlignJustify } from "react-icons/lu";
 import { IoMdClose } from "react-icons/io";
+import { BiChevronDown } from 'react-icons/bi';
 
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -35,18 +36,55 @@ export default function Home() {
           </button>
         </div>
       </nav>
-
       {menuOpen && (
-        <div className="fixed inset-0 h-screen bg-white flex justify-center items-center z-50">
-          <div className="flex flex-col space-y-4 items-center">
-            <button onClick={toggleMenu} className="text-black text-3xl">
+        <div className="fixed h-screen inset-0  bg-white flex flex-col">
+          <div className="flex justify-between items-center p-4">
+            <div className="text-black text-3xl font-bold">Better</div>
+            <button onClick={toggleMenu} className="text-black text-3xl mb-4">
               <IoMdClose />
             </button>
-            <a href="#" className="text-black text-xl">Buy</a>
-            <a href="#" className="text-black text-xl">Refinance</a>
-            <a href="#" className="text-black text-xl">HELOC</a>
-            <a href="#" className="text-black text-xl">Rates</a>
-            <a href="#" className="text-black text-xl">Better+</a>
+          </div>
+          <div className="flex flex-col p-4 flex-grow space-y-4">
+
+            <div className="flex justify-between items-center py-2">
+              <a href="#" className="text-black text-xl">Buy</a>
+              <BiChevronDown className="text-black text-xl" />
+            </div>
+            <div className="flex justify-between items-center py-2">
+              <a href="#" className="text-black text-xl">Refinance</a>
+              <BiChevronDown className="text-black text-xl" />
+            </div>
+            <div className="flex justify-between items-center py-2">
+              <a href="#" className="text-black text-xl">HELOC</a>
+              <BiChevronDown className="text-black text-xl" />
+            </div>
+            <div className="flex justify-between items-center py-2">
+              <a href="#" className="text-black text-xl">Rates</a>
+              <BiChevronDown className="text-black text-xl" />
+            </div>
+            <div className="flex justify-between items-center py-2">
+              <a href="#" className="text-black text-xl">Better+</a>
+              <BiChevronDown className="text-black text-xl" />
+            </div>
+            <div className="flex items-center justify-center space-x-2 w-full bg-green-100 rounded-3xl p-2 text-black">
+              <FaPhone className="text-xl" />
+              <button className="text-center">Call us anytime at (415) 523 8837</button>
+            </div>
+          </div>
+
+          <div className="flex flex-col p-4 space-y-2">
+
+            <div className="flex flex-col items-center justify-center space-x-2 w-full bg-green-300 rounded-3xl p-2 text-black">
+              <p>Get started</p>
+              <p>3min | No credit impact</p>
+            </div>
+
+            <div className="flex flex-col items-center justify-center space-x-2 w-full rounded-3xl p-2 text-black border border-green-200">
+              <p>Sign in</p>
+
+            </div>
+
+
           </div>
         </div>
       )}
