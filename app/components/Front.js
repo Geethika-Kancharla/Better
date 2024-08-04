@@ -55,7 +55,7 @@ const Front = () => {
 
                     {/* Rating Section */}
                     <div className="absolute bottom-0 left-0 right-0 flex justify-center pb-4 lg:static lg:right-16 lg:bottom-16 lg:w-1/3 lg:pl-16">
-                        <div className="bg-green-950 text-center lg:bg-[#004733] lg:w-52 lg:mt-20">
+                        <div className="bg-green-950 text-center lg:bg-[#004733] lg:w-52 lg:mt-28">
                             <div className="flex items-center text-5xl text-yellow-400 justify-center space-x-1 p-1">
                                 <FcGoogle className="w-12 h-12" />
                                 <TiStarFullOutline />

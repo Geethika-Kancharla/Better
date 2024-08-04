@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Footer from "./components/Footer";
 import Front from "./components/Front";
+import Story from "./components/Story";
 
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
     <div className="flex flex-col">
 
       <Front />
+      <Story />
       <Footer />
     </div>
   );
