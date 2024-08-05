@@ -54,9 +54,9 @@ const Preview = () => {
                     {/* Second Div */}
                     <div className="flex items-center space-x-4 bg-blue-100 p-4 m-2 rounded-lg">
                         <div className='lg:flex lg:flex-col lg:space-y-6'>
-                            <h1 className="text-2xl font-bold text-gray-800">One Day Mortgage&apos;¹</h1>
+                            <h1 className="text-2xl font-bold text-gray-800">One Day Mortgage</h1>
                             <p className='text-sm text-slate-700'>
-                                One Day Mortgage™ offers you more certainty and kicks your home loan into hyperdrive: go from locked rate to Commitment Letter in a single day. Traditional lenders deliver a Commitment Letter in a few weeks.²
+                                One Day Mortgage offers you more certainty and kicks your home loan into hyperdrive: go from locked rate to Commitment Letter in a single day. Traditional lenders deliver a Commitment Letter in a few weeks.
                             </p>
                         </div>
                         <Image
@@ -75,7 +75,7 @@ const Preview = () => {
                         <div className='lg:flex lg:flex-col lg:space-y-6'>
                             <h1 className="text-2xl font-bold text-gray-800">Better HELOC</h1>
                             <p className='text-sm text-slate-700'>
-                                Introducing One Day HELOC™—your express lane to accessing cash from your home with our Home Equity Line of Credit. Once you complete your application tasks, you’ll get an approval decision in 24 hours, and your cash in 7 days.²
+                                Introducing One Day HELOC your express lane to accessing cash from your home with our Home Equity Line of Credit. Once you complete your application tasks, you get an approval decision in 24 hours, and your cash in 7 days.²
                             </p>
                         </div>
                         <Image

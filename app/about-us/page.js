@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 import { FaPhoneAlt } from "react-icons/fa";
 import Image from 'next/image';
 
-const page = () => {
+const Page = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -451,4 +451,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page

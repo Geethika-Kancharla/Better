@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Footer from '../components/Footer';
 import { FaPhoneAlt } from "react-icons/fa";
 
-const page = () => {
+const Page = () => {
     return (
         <div className='h-screen bg-white text-black'>
             <div >
@@ -83,4 +83,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
