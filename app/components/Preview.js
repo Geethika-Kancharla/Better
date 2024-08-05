@@ -1,6 +1,8 @@
+"use client"
 import React from 'react'
+import Image from 'next/image';
 
-const Image = () => {
+const Preview = () => {
     return (
         <div className='bg-white h-screen'>
 
@@ -44,14 +46,12 @@ const Image = () => {
                     <div className="flex items-center space-x-4 bg-blue-100 p-4 m-2 rounded-lg">
 
                         <h1 className="text-2xl font-bold text-gray-800">Buying your first home with better</h1>
-                        <div className="flex items-center justify-center w-10 h-10 bg-blue-100 rounded-full border border-blue-200">
-                            <svg className="w-5 h-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                            </svg>
-                        </div>
-                        <img
+
+                        <Image
                             src="/images/home.webp"
                             alt="Descriptive Alt Text"
+                            width={288} // Set the width value
+                            height={256} // Set the height value
                             className="w-16 h-16 lg:w-72 lg:h-64 object-cover rounded-md"
                         />
                     </div>
@@ -62,15 +62,13 @@ const Image = () => {
                             <h1 className="text-2xl font-bold text-gray-800">One Day Mortgage¹</h1>
                             <p className='text-sm text-slate-700'>One Day Mortgage™ offers you more certainty and kicks your home loan into hyperdrive: go from locked rate to Commitment Letter in a single day. Traditional lenders deliver a Commitment Letter in a few weeks.²</p>
 
-                            <div className="flex items-center justify-center w-10 h-10 bg-blue-100 rounded-full border border-blue-200">
-                                <svg className="w-5 h-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                                </svg>
-                            </div>
+
                         </div>
-                        <img
+                        <Image
                             src="/images/one-.webp"
                             alt="Descriptive Alt Text"
+                            width={288} // Set the width value
+                            height={256} // Set the height value
                             className="w-16 h-16 object-cover rounded-md lg:w-80 lg:h-64 "
                         />
                     </div>
@@ -89,15 +87,13 @@ const Image = () => {
                             <h1 className="text-2xl font-bold text-gray-800">Better HELOC</h1>
                             <p className='text-sm text-slate-700'>Introducing One Day HELOC™—your express lane to accessing cash from your home with our Home Equity Line of Credit. Once you complete your application tasks, you’ll get an approval decision in 24 hours, and your cash in 7 days.2</p>
 
-                            <div className="flex items-center justify-center w-10 h-10 bg-blue-100 rounded-full border border-blue-200">
-                                <svg className="w-5 h-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                                </svg>
-                            </div>
+
                         </div>
-                        <img
+                        <Image
                             src="/images/heloc.webp"
                             alt="Descriptive Alt Text"
+                            width={288} // Set the width value
+                            height={256} // Set the height value
                             className="w-16 h-16 object-cover rounded-md lg:w-80 lg:h-64 lg:order-1 "
                         />
                     </div>
@@ -107,14 +103,12 @@ const Image = () => {
                     <div className="flex items-center space-x-2 bg-blue-100 p-4 m-2 rounded-lg lg:flex lg:flex-col">
 
                         <h1 className="text-2xl font-bold text-gray-800">Insurance</h1>
-                        <div className="flex items-center justify-center w-10 h-10 bg-blue-100 rounded-full border border-blue-200">
-                            <svg className="w-5 h-5 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                            </svg>
-                        </div>
-                        <img
+
+                        <Image
                             src="/images/insurance.webp"
                             alt="Descriptive Alt Text"
+                            width={288} // Set the width value
+                            height={256} // Set the height value
                             className="w-16 h-16 lg:w-80 lg:h-64 object-cover rounded-md"
                         />
                     </div>
@@ -133,4 +127,4 @@ const Image = () => {
     )
 }
 
-export default Image
+export default Preview

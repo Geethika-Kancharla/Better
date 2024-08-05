@@ -1,3 +1,4 @@
+"use client"
 import React, { useState } from 'react';
 import { TiStarFullOutline } from "react-icons/ti";
 
@@ -30,12 +31,12 @@ const Story = () => {
                     <button align="left" className="bg-[#004733] text-white rounded-xl mb-4 p-5 w-fit">
                         See all our stories
                     </button>
-                    <p align="left" className="text-black text-md mb-4">
+                    <div align="left" className="text-black text-md mb-4">
                         <div className='flex space-x-4'>
                             <TiStarFullOutline className='text-green-400 text-3xl' />
                             <p align="left" > Trustpilot  Excellent 4.3 out of 5</p>
                         </div>
-                    </p>
+                    </div>
                 </div>
 
                 {/* Links Section */}
