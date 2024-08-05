@@ -4,6 +4,7 @@ import { FaPhone } from "react-icons/fa";
 import { LuAlignJustify } from "react-icons/lu";
 import { IoMdClose } from "react-icons/io";
 import { BiChevronDown } from 'react-icons/bi';
+import Footer from "../components/Footer";
 
 const page = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -215,32 +216,36 @@ const page = () => {
             </div>
 
 
-            <div className='flex flex-col justify-center items-center'>
+            <div className='flex flex-col justify-center items-center overflow-x-hidden'>
 
                 <div className='p-52 bg-white '>
-                    <h4 className='text-green-800 font-bold text-center w-screen text-2xl'>Our mission</h4>
-                    <p className='text-3xl font-bold text-slate-700 text-center p-4'>We’re making homeownership simpler, faster — and most importantly, more accessible for all Americans.</p>
+                    <h4 className='text-green-800 font-bold text-center w-screen text-2xl lg:text-3xl'>Our mission</h4>
+                    <p className='text-3xl font-bold text-slate-700 text-center lg:text-center lg:text-7xl p-11'>We’re making homeownership simpler, faster — and most importantly, more accessible for all Americans.</p>
 
                 </div>
 
-                <div className='flex flex-col bg-white justify-center items-center p-7'>
-                    <img src="/images/video.jpg" />
-                    <h3 className='text-black text-xl font-semibold p-14'>
-                        The status quo is broken</h3>
-                    <p className='text-black'>The traditional processes around homeownership are opaque and stressful. Fees aren’t transparent and some are simply outrageous in size. Traditional mortgage lending is rife with unnecessary fees and slow, painful processes. It’s a system set up to benefit insiders — not you. Better.com CEO, Vishal Garg, set out to change that.</p>
-                    <button className='text-white bg-green-900 p-6 rounded-3xl m-3'>Read Vishal's story</button>
-
+                <div className='flex flex-col bg-white justify-center p-7 lg:flex lg:flex-row lg:text-left'>
+                    <img src="/images/video.jpg" className='lg:order-2 lg:h-2/3 lg:w-2/5 lg:pr-32 lg:mt-52' />
+                    <div className='flex flex-col lg:order-1 lg:p-32'>
+                        <h3 className='text-black text-xl font-semibold p-14  lg:text-3xl '>
+                            The status quo is broken</h3>
+                        <p className='text-black '>The traditional processes around homeownership are opaque and stressful. Fees aren’t transparent and some are simply outrageous in size. Traditional mortgage lending is rife with unnecessary fees and slow, painful processes. It’s a system set up to benefit insiders — not you. Better.com CEO, Vishal Garg, set out to change that.</p>
+                        <button className='text-white bg-[#004733] p-6 rounded-3xl m-3 lg:w-fit lg:m-2'>Read Vishal's story</button>
+                    </div>
                 </div>
 
 
-                <div className="flex flex-col bg-green-900 items-center w-screen h-fit p-7">
-                    <h3 className='text-white text-2xl p-8 font-bold'>How we’re changing things</h3>
-                    <p className='p-3 text-sm'>Homeownership is a huge part of our economy. Housing overall is a $33 trillion business, and mortgages account for $15 trillion. Yet home finance operates in the same way it has for decades — through opaque systems and expensive intermediaries whose interests are misaligned with consumers’.</p>
-                    <p className='p-3 text-sm'>That’s why Better.com is redefining the homeownership process from the ground up. We’re using technology to make it faster and more efficient, and humans to help make it friendly and enjoyable.</p>
+                <div className="flex flex-col bg-[#004733] items-center w-screen h-fit p-7">
+                    <h3 className='text-white text-2xl p-8 font-bold lg:text-4xl'>How we’re changing things</h3>
+                    <p className='p-3 text-sm lg:mx-28 lg:text-md'>Homeownership is a huge part of our economy. Housing overall is a $33 trillion business, and mortgages account for $15 trillion. Yet home finance operates in the same way it has for decades — through opaque systems and expensive intermediaries whose interests are misaligned with consumers’.</p>
+                    <p className='p-3 text-sm lg:p-7 lg:mx-24 lg:text-md'>That’s why Better.com is redefining the homeownership process from the ground up. We’re using technology to make it faster and more efficient, and humans to help make it friendly and enjoyable.</p>
                 </div>
+
+
+
 
                 <div className="flex flex-col bg-white items-center w-screen h-auto relative">
-                    <h3 className='text-slate-800 p-8'>Company Timeline</h3>
+                    <h3 className='text-slate-800 p-8 lg:text-3xl'>Company Timeline</h3>
 
                     <div className="relative flex flex-col items-center w-full h-auto">
                         {/* Central Line */}
@@ -248,48 +253,64 @@ const page = () => {
 
                         {/* Timeline Entries */}
                         <div className="flex flex-col space-y-10 w-full px-4">
+
+                            <div className="w-1/2 flex justify-center">
+                                {/* Spacer for alignment */}
+                                <div className="w-1/2" />
+                            </div>
+
                             {/* Timeline Entry 1 */}
                             <div className="relative flex items-center">
                                 <div className="absolute left-1/2 transform -translate-x-1/2 -mt-12">
-                                    <button className="bg-blue-500 text-white px-4 py-2 rounded-full shadow-md">Button 1</button>
+                                    <button className="bg-[#004733] text-white px-4 py-2 rounded-full shadow-md">2014</button>
                                 </div>
+
+
                                 <div className="w-1/2 flex justify-end">
-                                    <div className="bg-blue-500 text-white p-4 rounded-lg shadow-md mt-52 w-1/2">
-                                        <p>Milestone 1</p>
+                                    <div className="bg-slate-300 text-white p-4 rounded-lg mr-7 shadow-md mt-52 w-1/2 ">
+                                        <p className='text-sm text-black '>Vishal Garg’s first attempt to purchase his own dream home, he quickly realized that homebuying process is  broken. </p>
                                     </div>
                                 </div>
-                                <div className="w-1/2 flex justify-center">
-                                    {/* Spacer for alignment */}
-                                    <div className="w-1/2" />
-                                </div>
                             </div>
+
+
+
 
                             {/* Timeline Entry 2 */}
                             <div className="relative flex items-center">
                                 <div className="absolute left-1/2 transform -translate-x-1/2 -mt-12">
-                                    <button className="bg-blue-500 text-white px-4 py-2 rounded-full shadow-md">Button 2</button>
+                                    <button className="bg-[#004733] text-white px-4 py-2 rounded-full shadow-md">2015</button>
                                 </div>
                                 <div className="w-1/2 flex justify-center">
                                     {/* Spacer for alignment */}
                                     <div className="w-1/2" />
                                 </div>
-                                <div className="w-1/2 flex justify-start ml-4 pr-9 pt-32">
-                                    <div className="bg-blue-500 text-white p-4 rounded-lg shadow-md w-1/2">
-                                        <p>Milestone 2</p>
+                                <div className="w-1/2 flex justify-end lg:mr-80">
+                                    <div className="bg-slate-300 text-white p-4 rounded-lg shadow-md mt-80 mr-20 w-1/2">
+                                        <p className='text-sm text-black'>Better Mortgage funds its first mortgage loan entirely online (without a single phone call!).</p>
                                     </div>
                                 </div>
                             </div>
 
+
+
                             {/* Timeline Entry 3 */}
                             <div className="relative flex items-center">
                                 <div className="absolute left-1/2 transform -translate-x-1/2 -mt-12">
-                                    <button className="bg-blue-500 text-white px-4 py-2 rounded-full shadow-md">Button 3</button>
+                                    <button className="bg-[#004733] text-white px-4 py-2 rounded-full shadow-md">2016</button>
                                 </div>
-                                <div className="w-1/2 flex justify-end pr-8">
-                                    <div className="bg-blue-500 text-white p-4 rounded-lg shadow-md mt-52 w-1/2">
-                                        <p>Milestone 3</p>
+
+
+                                <div className="w-1/2 flex justify-end">
+                                    <div className="bg-slate-300 text-white p-4 rounded-lg mr-7 shadow-md mt-80 w-1/2 ">
+                                        <p className='text-sm text-black'>Better Mortgage becomes a Fannie Mae approved seller + servicer and establishes relationships with top mortgage investors.</p>
                                     </div>
                                 </div>
+
+
+
+
+
                                 <div className="w-1/2 flex justify-center">
                                     {/* Spacer for alignment */}
                                     <div className="w-1/2" />
@@ -299,15 +320,15 @@ const page = () => {
                             {/* Timeline Entry 4 */}
                             <div className="relative flex items-center">
                                 <div className="absolute left-1/2 transform -translate-x-1/2 -mt-12">
-                                    <button className="bg-blue-500 text-white px-4 py-2 rounded-full shadow-md">Button 4</button>
+                                    <button className="bg-[#004733] text-white px-4 py-2 rounded-full shadow-md">2017</button>
                                 </div>
                                 <div className="w-1/2 flex justify-center">
                                     {/* Spacer for alignment */}
                                     <div className="w-1/2" />
                                 </div>
-                                <div className="w-1/2 flex justify-start ml-4 pr-9 pt-32">
-                                    <div className="bg-blue-500 text-white p-2 rounded-lg shadow-md w-1/2">
-                                        <p>Milestone 4</p>
+                                <div className="w-1/2 flex justify-end lg:mr-80">
+                                    <div className="bg-slate-300 text-white p-4 rounded-lg  shadow-md mt-80 mr-20 w-1/2">
+                                        <p className='text-sm text-black'>Better expands into the real estate market with Better Real Estate.</p>
                                     </div>
                                 </div>
                             </div>
@@ -315,18 +336,108 @@ const page = () => {
                             {/* Timeline Entry 5 */}
                             <div className="relative flex items-center">
                                 <div className="absolute left-1/2 transform -translate-x-1/2 -mt-12">
-                                    <button className="bg-blue-500 text-white px-4 py-2 rounded-full shadow-md">Button 5</button>
+                                    <button className="bg-[#004733] text-white px-4 py-2 rounded-full shadow-md">2018</button>
                                 </div>
-                                <div className="w-1/2 flex justify-end pr-8">
-                                    <div className="bg-blue-500 text-white p-4 rounded-lg shadow-md mt-52 w-1/2">
-                                        <p>Milestone 5</p>
+
+
+                                <div className="w-1/2 flex justify-end">
+                                    <div className="bg-slate-300 text-white p-4 rounded-lg mr-7 shadow-md mt-52 w-1/2">
+                                        <p className='text-sm text-black'>Better Mortgage partners with Ally Bank to build Ally powered by Better.</p>
                                     </div>
+                                </div>
+                            </div>
+
+
+                            <div className="w-1/2 flex justify-center">
+                                {/* Spacer for alignment */}
+                                <div className="w-1/2" />
+                            </div>
+
+
+                            {/* Timeline Entry 6*/}
+                            <div className="relative flex items-center">
+                                <div className="absolute left-1/2 transform -translate-x-1/2 -mt-12">
+                                    <button className="bg-[#004733] text-white px-4 py-2 rounded-full shadow-md">2019</button>
                                 </div>
                                 <div className="w-1/2 flex justify-center">
                                     {/* Spacer for alignment */}
                                     <div className="w-1/2" />
                                 </div>
+                                <div className="w-1/2 flex justify-end lg:mr-80">
+                                    <div className="bg-slate-300 text-white p-4 rounded-lg shadow-md mt-80 mr-20 w-1/2">
+                                        <p className='text-sm text-black'>Better Mortgage launches its pilot partnership with American Express to deliver a seamless homebuying experience to AMEX customers.</p>
+                                    </div>
+                                </div>
                             </div>
+
+
+                            {/* Timeline Entry 5 */}
+                            <div className="relative flex items-center">
+                                <div className="absolute left-1/2 transform -translate-x-1/2 -mt-12">
+                                    <button className="bg-[#004733] text-white px-4 py-2 rounded-full shadow-md">2021</button>
+                                </div>
+
+
+                                <div className="w-1/2 flex justify-end">
+                                    <div className="bg-slate-300 text-white p-4 rounded-lg mr-7 shadow-md mt-52 w-1/2">
+                                        <p className='text-sm text-black'>Better acquires Trussle — The UK’s most innovative online mortgage broker.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            {/* Timeline Entry 8*/}
+                            <div className="relative flex items-center">
+                                <div className="absolute left-1/2 transform -translate-x-1/2 -mt-12">
+                                    <button className="bg-[#004733] text-white px-4 py-2 rounded-full shadow-md">2022</button>
+                                </div>
+                                <div className="w-1/2 flex justify-center">
+                                    {/* Spacer for alignment */}
+                                    <div className="w-1/2" />
+                                </div>
+                                <div className="w-1/2 flex justify-end lg:mr-80">
+                                    <div className="bg-slate-300 text-white p-4 rounded-lg shadow-md mt-80 mr-20 w-1/2">
+                                        <p className='text-sm text-black'>Better Mortgage becomes the first fintech to fund $100B home loans entirely online.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Timeline Entry 5 */}
+                            <div className="relative flex items-center">
+                                <div className="absolute left-1/2 transform -translate-x-1/2 -mt-12">
+                                    <button className="bg-[#004733] text-white px-4 py-2 rounded-full shadow-md">2023</button>
+                                </div>
+
+
+                                <div className="w-1/2 flex justify-end">
+                                    <div className="bg-slate-300 text-white p-4 rounded-lg mr-7 shadow-md mt-52 w-1/2">
+                                        <p className='text-sm text-black'>Better Mortgage launches One Day Verified Approval Letter.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            {/* Timeline Entry 8*/}
+                            <div className="relative flex items-center">
+                                <div className="absolute left-1/2 transform -translate-x-1/2 -mt-12">
+                                    <button className="bg-[#004733] text-white px-4 py-2 rounded-full shadow-md">Today</button>
+                                </div>
+                                <div className="w-1/2 flex justify-center">
+                                    {/* Spacer for alignment */}
+                                    <div className="w-1/2" />
+                                </div>
+                                <div className="w-1/2 flex justify-end lg:mr-80">
+                                    <div className="bg-slate-300 text-white p-4 rounded-lg shadow-md mt-80 mr-20 w-1/2 lg:space-y-3">
+                                        <p className='text-sm text-black'>You become part of the story by joining tens of thousands of happy Better Mortgage borrowers.</p>
+                                        <button className='bg-[#004733] text-white p-3 rounded-lg'>Get Started</button>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
                         </div>
                     </div>
                 </div>
@@ -342,7 +453,7 @@ const page = () => {
 
 
 
-
+            <Footer />
         </div>
     )
 }
