@@ -6,6 +6,7 @@ import { IoMdClose } from "react-icons/io";
 import { BiChevronDown } from 'react-icons/bi';
 import Footer from "../components/Footer";
 import { FaPhoneAlt } from "react-icons/fa";
+import Image from 'next/image';
 
 const page = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -226,12 +227,16 @@ const page = () => {
                 </div>
 
                 <div className='flex flex-col bg-white justify-center p-7 lg:flex lg:flex-row lg:text-left'>
-                    <img src="/images/video.jpg" className='lg:order-2 lg:h-2/3 lg:w-2/5 lg:pr-32 lg:mt-52' />
+                    <Image src="/images/video.jpg"
+                        width={800}  // Specify the width of the image
+                        height={600}
+
+                        alt="Video" className='lg:order-2 lg:h-2/3 lg:w-2/5 lg:pr-32 lg:mt-52' />
                     <div className='flex flex-col lg:order-1 lg:p-32'>
                         <h3 className='text-black text-xl font-semibold p-14  lg:text-3xl '>
                             The status quo is broken</h3>
                         <p className='text-black '>The traditional processes around homeownership are opaque and stressful. Fees aren’t transparent and some are simply outrageous in size. Traditional mortgage lending is rife with unnecessary fees and slow, painful processes. It’s a system set up to benefit insiders — not you. Better.com CEO, Vishal Garg, set out to change that.</p>
-                        <button className='text-white bg-[#004733] p-6 rounded-3xl m-3 lg:w-fit lg:m-2'>Read Vishal's story</button>
+                        <button className='text-white bg-[#004733] p-6 rounded-3xl m-3 lg:w-fit lg:m-2'>Read Vishal&apos;s story</button>
                     </div>
                 </div>
 

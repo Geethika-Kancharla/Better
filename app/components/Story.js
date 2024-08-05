@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import { TiStarFullOutline } from "react-icons/ti";
+import Image from 'next/image';
 
 const Story = () => {
     // State to keep track of the selected image
@@ -65,10 +66,13 @@ const Story = () => {
 
                     {/* Image Section */}
                     <div className="flex justify-center lg:order-1 ">
-                        <img
+                        <Image
                             src={selectedImage}
                             alt="Sample Image"
                             className="object-cover lg:w-60 lg:h-5/6 rounded-md"
+                            width={800} // Specify the width of the image
+                            height={600} // Specify the height of the image
+                            priority
                         />
                     </div>
                 </div>

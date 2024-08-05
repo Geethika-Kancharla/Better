@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Image from 'next/image';
 import Footer from '../components/Footer';
 import { FaPhoneAlt } from "react-icons/fa";
 
@@ -27,10 +27,16 @@ const page = () => {
                     </div>
 
                     {/* Rounded Image */}
-                    <img
+
+
+
+                    <Image
                         src="/images/Profile.jpg"
-                        alt="Rounded Image"
+                        alt="Sample Image"
                         className="relative z-10 w-12 h-12 rounded-full border-4 border-white bg-gray-200"
+                        width={800} // Specify the width of the image
+                        height={600} // Specify the height of the image
+                        priority
                     />
                 </div>
 
