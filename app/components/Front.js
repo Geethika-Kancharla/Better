@@ -34,7 +34,7 @@ const Front = () => {
                 <div className="relative bg-[#004733] lg:bg-transparent h-full flex items-center justify-center lg:pr-36 lg:mt-24 lg:m-20">
                     <div className="relative w-full flex flex-col lg:w-3/4 lg:h-auto lg:-mt-12">
                         {/* Heading for large screens */}
-                        <div className="hidden lg:flex flex-col items-center justify-center absolute top-12 left-1/2 transform -translate-x-1/2 text-center text-green-400 text-7xl lg:text-9xl font-bold">
+                        <div className="hidden lg:flex flex-col items-center justify-center absolute top-12 left-1/2 transform -translate-x-1/2 text-center text-green-400 text-7xl lg:text-9xl font-bold lg:pt-10">
                             <div className="mb-2">Mortgages</div>
                             <div className="flex items-center space-x-9">
                                 <div>made</div>
