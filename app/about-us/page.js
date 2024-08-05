@@ -434,24 +434,11 @@ const page = () => {
                                 </div>
                             </div>
 
-
-
-
-
                         </div>
                     </div>
                 </div>
 
-
-
-
-
-
-
             </div>
-
-
-
 
             <Footer />
         </div>
