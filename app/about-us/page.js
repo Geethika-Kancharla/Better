@@ -5,6 +5,7 @@ import { LuAlignJustify } from "react-icons/lu";
 import { IoMdClose } from "react-icons/io";
 import { BiChevronDown } from 'react-icons/bi';
 import Footer from "../components/Footer";
+import { FaPhoneAlt } from "react-icons/fa";
 
 const page = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -157,7 +158,7 @@ const page = () => {
                     </div>
                     <div className="flex p-2 space-x-3 lg:space-x-10">
                         <div className="flex items-center justify-center w-12 h-12 rounded-full border border-black">
-                            <FaPhone className="text-2xl text-black" />
+                            <FaPhoneAlt className="text-2xl text-black" />
                         </div>
                         <p className="hidden lg:flex lg:py-2 lg:pr-10 text-black">Sign in</p>
                         <button onClick={toggleMenu} className="p-2 lg:hidden text-3xl text-black">

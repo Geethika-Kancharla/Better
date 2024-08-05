@@ -1,6 +1,7 @@
 import React from 'react'
-import { FaPhone } from "react-icons/fa";
+
 import Footer from '../components/Footer';
+import { FaPhoneAlt } from "react-icons/fa";
 
 const page = () => {
     return (
@@ -13,7 +14,7 @@ const page = () => {
                     </div>
                     <div className='lg:pr-36 lg:pt-10'>
                         <div className='p-4 flex items-center justify-center w-12 h-12 rounded-full border border-black bg-blue-100'>
-                            <FaPhone />
+                            <FaPhoneAlt />
                         </div>
                     </div>
                 </div>

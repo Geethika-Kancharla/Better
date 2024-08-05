@@ -7,6 +7,7 @@ import { BiChevronDown } from 'react-icons/bi';
 import Footer from "../components/Footer";
 import { Slider, IconButton } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
+import { FaPhoneAlt } from "react-icons/fa";
 
 const Page = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -169,7 +170,7 @@ const Page = () => {
                     </div>
                     <div className="flex p-2 space-x-3 lg:space-x-10">
                         <div className="flex items-center justify-center w-12 h-12 rounded-full border border-black">
-                            <FaPhone className="text-2xl text-black" />
+                            <FaPhoneAlt className="text-2xl text-black" />
                         </div>
                         <p align="justify" className="hidden lg:flex lg:py-2 lg:pr-10 text-black">Sign in</p>
                         <button onClick={toggleMenu} className="p-2 lg:hidden text-3xl text-black">
@@ -181,7 +182,7 @@ const Page = () => {
                 {menuOpen && (
                     <div className="lg:hidden">
                         <div className="flex items-center justify-center space-x-2 w-full bg-green-200 rounded-3xl p-2 text-black">
-                            <FaPhone className="text-xl" />
+                            <FaPhoneAlt className="text-xl" />
                             <button className="text-center">Call us anytime at (415) 523 8837</button>
                         </div>
                         <div className="flex flex-col p-4 flex-grow space-y-4">

@@ -4,6 +4,8 @@ import { FaPhone } from "react-icons/fa";
 import { LuAlignJustify } from "react-icons/lu";
 import { IoMdClose } from "react-icons/io";
 import { BiChevronDown } from 'react-icons/bi';
+import { FaPhoneAlt } from "react-icons/fa";
+
 
 export default function Navbar() {
 
@@ -177,7 +179,7 @@ export default function Navbar() {
                 </div>
                 <div className="flex p-2 space-x-3 lg:space-x-10">
                     <div className={`flex items-center justify-center w-12 h-12 rounded-full border ${scrolled ? 'border-black' : 'border-white'}`}>
-                        <FaPhone className={`text-2xl ${scrolled ? 'text-black' : 'text-white'}`} />
+                        <FaPhoneAlt className={`text-2xl ${scrolled ? 'text-black' : 'text-white'}`} />
                     </div>
                     <p className={`hidden lg:flex lg:py-2 lg:pr-10 ${scrolled ? 'text-black' : 'text-white'}`}>Sign in</p>
                     <button onClick={toggleMenu} className={`p-2 lg:hidden text-3xl ${scrolled ? 'text-black' : 'text-white'}`}>
