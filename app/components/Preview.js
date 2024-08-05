@@ -12,7 +12,7 @@ const Preview = () => {
         <div className='bg-white h-screen'>
             <div className="flex flex-col lg:flex-row items-start lg:items-center lg:space-x-4 p-4">
                 <h1 className="text-2xl font-bold text-gray-800 mb-4 lg:mb-0 lg:text-5xl lg:text-left lg:flex-start">
-                    Got questions? We've got answers
+                    Got questions? We have got answers
                 </h1>
 
                 <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-2">
@@ -75,7 +75,7 @@ const Preview = () => {
                         <div className='lg:flex lg:flex-col lg:space-y-6'>
                             <h1 className="text-2xl font-bold text-gray-800">Better HELOC</h1>
                             <p className='text-sm text-slate-700'>
-                                Introducing One Day HELOC your express lane to accessing cash from your home with our Home Equity Line of Credit. Once you complete your application tasks, you get an approval decision in 24 hours, and your cash in 7 days.²
+                                Introducing One Day HELOC your express lane to accessing cash from your home with our Home Equity Line of Credit. Once you complete your application tasks, you get an approval decision in 24 hours, and your cash in 7 days.
                             </p>
                         </div>
                         <Image

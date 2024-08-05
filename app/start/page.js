@@ -44,7 +44,7 @@ const Page = () => {
 
             <div className='flex flex-col space-y-14 justify-center items-center '>
                 <div>
-                    <h1 className='text-black font-bold text-2xl text-center'>Hi, I'm Betty!</h1>
+                    <h1 className='text-black font-bold text-2xl text-center'>Hi, I am Betty!</h1>
                     <h1 className='text-black font-bold text-2xl text-center'>What can I help you with?</h1>
                 </div>
                 <div className='flex flex-col justify-center items-center space-y-6'>
@@ -64,7 +64,7 @@ const Page = () => {
                 </div>
 
                 <div className='bg-blue-100 h-60 flex flex-col w-3/4 lg:w-1/4 '>
-                    <p className='text-slate-500 text-md p-6'>After a few questions, you'll unlock:</p>
+                    <p className='text-slate-500 text-md p-6'>After a few questions, you will unlock:</p>
                     <p className='text-slate-700 text-md p-4'>Custom mortgage rates</p>
 
                     <p className='text-slate-700 text-md p-4'>Exclusive offers</p>

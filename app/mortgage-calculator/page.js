@@ -391,7 +391,7 @@ const Page = () => {
                         <p align="justify" className="text-slate-600 mt-2">Your monthly mortgage payment includes loan principal and interest, property taxes, homeowners insurance, and mortgage insurance (PMI), if applicable. While not typically included in your mortgage payment, homeowners also pay monthly utilities and sometimes pay homeowners association (HOA) fees, so its a good idea to factor these into your monthly budget. This mortgage calculator factors in all these typical monthly costs so you can really crunch the numbers.</p>
 
                         <h1 className="text-2xl font-bold  m-24">Formula for calculating monthly mortgage payments</h1>
-                        <p align="justify" className="text-slate-600 mt-2">The easiest way to calculate your mortgage payment is to use a calculator, but for the curious or mathematically inclined, here's the formula for calculating principal and interest yourself:</p>
+                        <p align="justify" className="text-slate-600 mt-2">The easiest way to calculate your mortgage payment is to use a calculator, but for the curious or mathematically inclined, here is the formula for calculating principal and interest yourself:</p>
 
 
 
@@ -454,26 +454,6 @@ const Page = () => {
                         <hr className="border-t-2 border-gray-300 w-1/2" />
                     </div>
                 </div>
-
-
-
-
-                <div className="flex flex-col items-center justify-center py-8">
-
-                    <div className="text-center py-4 p-7">
-
-
-
-                        <p align="justify" className="text-slate-600 mt-24 text-sm">
-
-                            The average lifetime savings estimate is based on a comparison of the Freddie Mac Primary Mortgage Market Survey (PMMS) 30-year fixed-rate mortgage product with Better Mortgage own offered rate for a comparable mortgage product between Jan 20 - Dec 20. </p>
-                    </div>
-                    <div className="w-full flex justify-center">
-                        <hr className="border-t-2 border-gray-300 w-1/2" />
-                    </div>
-                </div>
-
-
 
 
             </div>
