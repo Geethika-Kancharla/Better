@@ -1,4 +1,6 @@
+// Use client-side rendering
 "use client";
+
 import React, { useState, useEffect } from 'react';
 import { FaPhone } from "react-icons/fa";
 import { LuAlignJustify } from "react-icons/lu";
@@ -6,16 +8,18 @@ import { IoMdClose } from "react-icons/io";
 import { BiChevronDown } from 'react-icons/bi';
 import { FaPhoneAlt } from "react-icons/fa";
 
-
 export default function Navbar() {
-
+    // State to manage the mobile menu open/close
     const [menuOpen, setMenuOpen] = useState(false);
+    // State to manage the background color of the navbar when scrolled
     const [scrolled, setScrolled] = useState(false);
 
+    // Function to toggle the mobile menu
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
 
+    // Function to handle scroll event
     const handleScroll = () => {
         if (window.scrollY > window.innerHeight) {
             setScrolled(true);
@@ -24,6 +28,7 @@ export default function Navbar() {
         }
     };
 
+    // Add scroll event listener on component mount and cleanup on unmount
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
         return () => {
@@ -71,20 +76,17 @@ export default function Navbar() {
                                         className={`lg:p-4 rounded-3xl hover:bg-white hover:text-green-900 lg:text-xl ${scrolled ? 'text-black' : 'text-white'}`}
                                     >
                                         Refinance
-
                                     </a>
                                     {/* Dropdown Menu */}
                                     <div className="absolute left-0 mt-6 hidden group-hover:block bg-white text-black rounded-lg shadow-lg w-80 space-y-3">
                                         <a href="" className="block px-4 py-2 hover:bg-gray-100">Apply Now</a>
                                         <a href="" className="block px-4 py-2 hover:bg-gray-100">Refinance Rates</a>
                                         <a href="" className="block px-4 py-2 hover:bg-gray-100">Cash-out refinance calculator</a>
-
                                         <a href="" className="block px-4 py-2 hover:bg-gray-100">Learning center</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
 
                         <div className="relative lg:pt-2">
                             {/* Main Navigation Links */}
@@ -95,21 +97,17 @@ export default function Navbar() {
                                         className={`lg:p-4 rounded-3xl hover:bg-white hover:text-green-900 lg:text-xl ${scrolled ? 'text-black' : 'text-white'}`}
                                     >
                                         HELOC
-
                                     </a>
                                     {/* Dropdown Menu */}
                                     <div className="absolute left-0 mt-6 hidden group-hover:block bg-white text-black rounded-lg shadow-lg w-80 space-y-3">
                                         <a href="" className="block px-4 py-2 hover:bg-gray-100">Apply Now</a>
                                         <a href="" className="block px-4 py-2 hover:bg-gray-100">Calculate your Cash</a>
                                         <a href="" className="block px-4 py-2 hover:bg-gray-100">HELOC vs. Cash-out-Refinance</a>
-
                                         <a href="" className="block px-4 py-2 hover:bg-gray-100">Learning center</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
 
                         <div className="relative lg:pt-2">
                             {/* Main Navigation Links */}
@@ -120,23 +118,18 @@ export default function Navbar() {
                                         className={`lg:p-4 rounded-3xl hover:bg-white hover:text-green-900 lg:text-xl ${scrolled ? 'text-black' : 'text-white'}`}
                                     >
                                         Rates
-
                                     </a>
                                     {/* Dropdown Menu */}
                                     <div className="absolute left-0 mt-6 hidden group-hover:block bg-white text-black rounded-lg shadow-lg w-80 space-y-3">
-
-                                        <a href="" className="block px-4 py-2 hover:bg-gray-100">Purchase Mortage Rates</a>
-
+                                        <a href="" className="block px-4 py-2 hover:bg-gray-100">Purchase Mortgage Rates</a>
                                         <a href="" className="block px-4 py-2 hover:bg-gray-100">Refinance rates</a>
                                         <a href="" className="block px-4 py-2 hover:bg-gray-100">Refinance cash-out-rates</a>
                                         <a href="" className="block px-4 py-2 hover:bg-gray-100">HELOC rates</a>
                                         <a href="" className="block px-4 py-2 hover:bg-gray-100">Purchase VA rates</a>
-
                                     </div>
                                 </div>
                             </div>
                         </div>
-
 
                         <div className="relative lg:pt-2">
                             {/* Main Navigation Links */}
@@ -147,13 +140,10 @@ export default function Navbar() {
                                         className={`lg:p-4 rounded-3xl hover:bg-white hover:text-green-900 lg:text-xl ${scrolled ? 'text-black' : 'text-white'}`}
                                     >
                                         Better+
-
                                     </a>
                                     {/* Dropdown Menu */}
                                     <div className="absolute left-0 mt-6 hidden group-hover:block bg-white text-black rounded-lg shadow-lg w-80 space-y-3">
-
                                         <a href="" className="block px-4 py-2 hover:bg-gray-100">Get Insurance</a>
-
                                         <a href="" className="block px-4 py-2 hover:bg-gray-100">Title and Closing</a>
                                         <a href="" className="block px-4 py-2 hover:bg-gray-100">Better Attorney Match</a>
                                         <a href="" className="block px-4 py-2 hover:bg-gray-100">Learning Center</a>
@@ -170,10 +160,6 @@ export default function Navbar() {
                             </div>
                         </div>
 
-
-
-
-
                         {/* More links with similar structure */}
                     </div>
                 </div>
@@ -188,8 +174,9 @@ export default function Navbar() {
                 </div>
             </nav>
 
+            {/* Mobile menu */}
             {menuOpen && (
-                <div className="fixed h-screen inset-0  bg-white flex flex-col">
+                <div className="fixed h-screen inset-0 bg-white flex flex-col">
                     <div className="flex justify-between items-center p-4">
                         <div className="text-black text-3xl font-bold">Better</div>
                         <button onClick={toggleMenu} className="text-black text-3xl mb-4">
@@ -197,7 +184,6 @@ export default function Navbar() {
                         </button>
                     </div>
                     <div className="flex flex-col p-4 flex-grow space-y-4">
-
                         <div className="flex justify-between items-center py-2">
                             <a href="" className="text-black text-xl">Buy</a>
                             <BiChevronDown className="text-black text-xl" />
@@ -225,22 +211,16 @@ export default function Navbar() {
                     </div>
 
                     <div className="flex flex-col p-4 space-y-2">
-
                         <div className="flex flex-col items-center justify-center space-x-2 w-full bg-green-300 rounded-3xl p-2 text-black">
                             <p>Get started</p>
                             <p>3min | No credit impact</p>
                         </div>
-
                         <div className="flex flex-col items-center justify-center space-x-2 w-full rounded-3xl p-2 text-black border border-green-200">
                             <p>Sign in</p>
-
                         </div>
-
-
                     </div>
                 </div>
             )}
         </div>
-
-    )
+    );
 }

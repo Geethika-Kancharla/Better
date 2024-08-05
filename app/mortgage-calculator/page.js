@@ -585,18 +585,7 @@ const Page = () => {
                             </div>
 
 
-
-
                         </div>
-
-
-
-
-
-
-
-
-
 
 
                         <p align="justify" className="text-slate-600 mt-24 text-sm">*See Better Real Estate discount terms and conditions.
