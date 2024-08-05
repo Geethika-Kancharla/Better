@@ -41,9 +41,9 @@ const page = () => {
                     <h1 className='text-black font-bold text-2xl text-center'>What can I help you with?</h1>
                 </div>
                 <div className='flex flex-col justify-center items-center space-y-6'>
-                    <button className='text-black p-6 font-bold border border-black w-80 rounded-lg hover:border hover:border-green-800 lg:w-96'>Buying a home</button>
-                    <button className='text-black p-6 font-bold border border-black w-80 rounded-lg hover:border hover:border-green-800 lg:w-96'>Refinance my mortgage</button>
-                    <button className='text-black p-6 font-bold border border-black w-80 rounded-lg hover:border hover:border-green-800 lg:w-96'>Get cash from my home</button>
+                    <button className='text-black p-6 font-bold border border-black w-80 rounded-lg  hover:border-green-800 lg:w-96 hover:border-8'>Buying a home</button>
+                    <button className='text-black p-6 font-bold border border-black w-80 rounded-lg hover:border-green-800 lg:w-96 hover:border-8'>Refinance my mortgage</button>
+                    <button className='text-black p-6 font-bold border border-black w-80 rounded-lg  hover:border-green-800 lg:w-96 hover:border-8'>Get cash from my home</button>
                 </div>
                 <div className='flex space-x-4 pl-16 lg:pl-10'>
                     <div className='flex flex-col'>
